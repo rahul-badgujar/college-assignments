@@ -1,0 +1,144 @@
+rahul@rahul-badgujar:~/rahul/studies/college-assignments/csl-assignments/assign2_attacks/ddos_attack$ sudo python3 ddos_attack.py 
+[sudo] password for rahul: 
+[+++] Socket No. 1 connected to target
+[+++] Request served by Server
+[+++] Request served by Server
+[+++] Socket No. 2 connected to target
+[+++] Request served by Server
+[+++] Socket No. 3 connected to target
+[+++] Request served by Server
+[+++] Socket No. 4 connected to target
+[+++] Request served by Server
+[+++] Socket No. 5 connected to target
+[+++] Request served by Server
+[+++] Socket No. 6 connected to target
+[+++] Request served by Server
+[+++] Socket No. 7 connected to target
+[+++] Request served by Server
+[+++] Socket No. 8 connected to target
+[+++] Request served by Server
+[+++] Socket No. 9 connected to target
+[+++] Request served by Server
+[+++] Socket No. 10 connected to target
+[+++] Request served by Server
+[+++] Socket No. 11 connected to target
+[+++] Request served by Server
+[+++] Socket No. 12 connected to target
+[+++] Request served by Server
+[+++] Socket No. 13 connected to target
+[+++] Request served by Server
+[+++] Socket No. 14 connected to target
+[+++] Request served by Server
+[+++] Socket No. 15 connected to target
+[+++] Request served by Server
+[+++] Socket No. 16 connected to target
+[+++] Request served by Server
+[+++] Socket No. 17 connected to target
+[+++] Request served by Server
+[+++] Socket No. 18 connected to target
+[+++] Request served by Server
+[+++] Socket No. 19 connected to target
+[+++] Request served by Server
+[+++] Socket No. 20 connected to target
+[+++] Request served by Server
+[+++] Socket No. 21 connected to target
+[+++] Request served by Server
+[+++] Socket No. 22 connected to target
+[+++] Request served by Server
+[+++] Socket No. 23 connected to target
+[+++] Request served by Server
+[+++] Socket No. 24 connected to target
+[+++] Request served by Server
+[+++] Socket No. 25 connected to target
+[+++] Request served by Server
+[+++] Socket No. 26 connected to target
+[+++] Request served by Server
+[+++] Socket No. 27 connected to target
+[+++] Request served by Server
+[+++] Socket No. 28 connected to target
+[+++] Request served by Server
+[+++] Socket No. 29 connected to target
+[+++] Request served by Server
+[+++] Socket No. 30 connected to target
+[+++] Request served by Server
+[+++] Socket No. 31 connected to target
+[+++] Request served by Server
+[+++] Socket No. 32 connected to target
+[+++] Request served by Server
+[+++] Socket No. 33 connected to target
+[+++] Request served by Server
+[+++] Socket No. 34 connected to target
+[+++] Request served by Server
+[+++] Socket No. 35 connected to target
+[+++] Request served by Server
+[+++] Socket No. 36 connected to target
+[+++] Request served by Server
+[+++] Socket No. 37 connected to target
+[+++] Request served by Server
+[+++] Socket No. 38 connected to target
+[+++] Request served by Server
+[+++] Socket No. 39 connected to target
+[+++] Request served by Server
+[+++] Socket No. 40 connected to target
+[+++] Request served by Server
+[+++] Socket No. 41 connected to target
+[+++] Request served by Server
+[+++] Socket No. 42 connected to target
+[+++] Request served by Server
+[+++] Socket No. 43 connected to target
+[+++] Request served by Server
+[+++] Socket No. 44 connected to target
+[+++] Request served by Server
+[+++] Socket No. 45 connected to target
+[+++] Request served by Server
+[+++] Socket No. 46 connected to target
+[+++] Request served by Server
+[+++] Socket No. 47 connected to target
+[+++] Request served by Server
+[+++] Socket No. 48 connected to target
+[+++] Request served by Server
+[+++] Socket No. 49 connected to target
+[+++] Request served by Server
+[+++] Socket No. 50 connected to target
+[+++] Request served by Server
+[+++] Socket No. 51 connected to target
+[+++] Request served by Server
+[+++] Socket No. 52 connected to target
+[+++] Socket No. 53 connected to target
+[+++] Request served by Server
+[+++] Socket No. 54 connected to target
+[+++] Request served by Server
+[+++] Socket No. 55 connected to target
+[+++] Request served by Server
+[+++] Socket No. 56 connected to target
+[+++] Request served by Server
+[+++] Socket No. 57 connected to target
+[+++] Request served by Server
+[+++] Socket No. 58 connected to target
+[+++] Request served by Server
+[+++] Request served by Server
+[+++] Socket No. 59 connected to target
+[+++] Request served by Server
+[+++] Socket No. 60 connected to target
+[+++] Request served by Server
+[+++] Socket No. 61 connected to target
+[+++] Request served by Server
+[+++] Socket No. 62 connected to target
+[+++] Request served by Server
+[+++] Socket No. 63 connected to target
+[+++] Request served by Server
+[+++] Socket No. 64 connected to target
+[+++] Request served by Server
+[+++] Request served by Server
+[+++] Request served by Server
+[+++] Request served by Server
+[+++] Request served by Server
+[+++] Request served by Server
+[+++] Request served by Server
+[+++] Request served by Server
+[+++] Request served by Server
+[+++] Request served by Server
+[+++] Request served by Server
+[+++] Request served by Server
+[---] Server failed to serve the Request. Error: [Errno 32] Broken pipe
+DOS ATTACK SUCCEEDED on 127.0.0.1:8080 !!!
