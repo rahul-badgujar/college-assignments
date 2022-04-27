@@ -1,3 +1,5 @@
+# Script to launch a DDOS Attack on localhost:8080
+
 import socket
 import threading
 from time import sleep
