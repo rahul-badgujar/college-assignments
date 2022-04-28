@@ -1,4 +1,4 @@
-# Script to launch a DDOS Attack on localhost:8080
+# Script to launch a DDOS Attack
 
 import socket
 import threading

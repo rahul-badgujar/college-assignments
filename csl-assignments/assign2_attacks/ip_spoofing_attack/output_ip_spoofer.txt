@@ -1,0 +1,28 @@
+rahul@rahul-badgujar:~/rahul/studies/college-assignments/csl-assignments/assign2_attacks/ip_spoofing_attack$ sudo python3 ip_spoofing_attack.py 
+[sudo] password for rahul: 
+IP SPOOFING ATTACK
+Source IP Address (spoofed): 192.168.1.254
+Destination IP Address: 192.168.0.113
+Source Port No.: 430
+Destination Port No.: 80
+Sample Payload: This is sample payload for the spoofed packet
+.
+Sent 1 packets.
+.
+Sent 1 packets.
+.
+Sent 1 packets.
+.
+Sent 1 packets.
+.
+Sent 1 packets.
+.
+Sent 1 packets.
+.
+Sent 1 packets.
+.
+Sent 1 packets.
+.
+Sent 1 packets.
+.
+Sent 1 packets.

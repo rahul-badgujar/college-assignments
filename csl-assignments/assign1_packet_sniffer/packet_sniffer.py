@@ -36,7 +36,7 @@ while True:
     assert(len(rawPacketReceived) == 2, 'Packet received is in invalid format')
 
     # Extract the packet string from tuple
-    packet = packet[0]
+    packet = rawPacketReceived[0]
 
     # Extact the IP Header String => First 20 characters of packet represent IP Header
     ipHeaderStr = packet[0:20]
@@ -95,3 +95,4 @@ while True:
             'Data': data,
         }
     )
+    print('\n==================================================================\n')
