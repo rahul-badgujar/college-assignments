@@ -1,0 +1,858 @@
+<!DOCTYPE html>
+<html>
+<head> 
+	<!-- Include meta tag to ensure proper rendering and touch zooming-->
+	<meta name = "viewport" content = "width=device-width, intial-scale = 1">
+
+	<!--http://themeroller.jquerymobile.com/?ver=1.4.5&style_id=20180303-21 - Themeroller link-->
+	<!--https://www.gloomaps.com/tT74rxtxcE  - Site map-->
+
+	<!--Include jQuery Mobile stylesheets-->
+	<link rel = "stylesheet" href = "http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+	
+	<!--Include the jQuery library -->
+	<script src = "http://code.jquery.com/jquery-1.11.1.min.js"></script>
+	
+	<!--Include the jQuery mobile library -->
+	<script src = "http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+
+	<script type = "text/javascript" src = "http://maps.google.com/maps/api/js?sensor=true"></script>
+
+	<link rel="stylesheet" href="themes/Potatheme2.min.css" />
+	<link rel="stylesheet" href="themes/jquery.mobile.icons.min.css" />
+	<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile.structure-1.4.5.min.css" />
+
+	<script>
+	$(document).on("pagecreate","#home", function(){ 
+  		$( "#homepopup" ).on( "popupbeforeposition", function( event, ui ) {
+    		var newHeight = $(window).height();
+    		var newWidth = $(window).width();
+    		$("#homemap").width(newWidth * 0.8);
+    		$("#homemap").height(newHeight * 0.8);
+    
+   			var myOptions = {
+      			enableHighAccuracy: true,
+      			zoom: 6,
+      			center: new google.maps.LatLng(18.128466, -77.354804),
+    		};
+
+    		map = new google.maps.Map($('#homemap')[0], myOptions);
+    
+    		var marker = new google.maps.Marker({
+    			position: map.getCenter(),
+    			map: map,
+    			title: 'It is here.',
+  			});
+    	}); 
+	});
+
+	$(document).on("pagecreate","#mapPage", function(){ 
+  		$( "#kgnpopup" ).on( "popupbeforeposition", function( event, ui ) {
+    		var newHeight = $(window).height();
+    		var newWidth = $(window).width();
+    		$("#kgnmap").width(newWidth * 0.8);
+    		$("#kgnmap").height(newHeight * 0.8);
+    
+   			var myOptions = {
+      			enableHighAccuracy: true,
+      			zoom: 12,
+      			center: new google.maps.LatLng(18.011950, -76.805263),
+    		};
+
+    		map = new google.maps.Map($('#kgnmap')[0], myOptions);
+    
+    		var marker = new google.maps.Marker({
+    			position: map.getCenter(),
+    			map: map,
+    			title: 'It is here.',
+  			});
+    	}); 
+	}); 
+
+	$(document).on("pagecreate","#b1", function(){ 
+  		$( "#bmmpopup" ).on( "popupbeforeposition", function( event, ui ) {
+    		var newHeight = $(window).height();
+    		var newWidth = $(window).width();
+    		$("#bmmmap").width(newWidth * 0.8);
+    		$("#bmmmap").height(newHeight * 0.8);
+    
+   			var myOptions = {
+      			enableHighAccuracy: true,
+      			zoom: 16,
+      			center: new google.maps.LatLng(18.019549,-76.7818037),
+    		};
+
+    		map = new google.maps.Map($('#bmmmap')[0], myOptions);
+    
+    		var marker = new google.maps.Marker({
+    			position: map.getCenter(),
+    			map: map,
+    			title: 'It is here.',
+  			});
+    	}); 
+	}); 
+
+	$(document).on("pagecreate","#b2", function(){ 
+  		$( "#dhpopup" ).on( "popupbeforeposition", function( event, ui ) {
+    		var newHeight = $(window).height();
+    		var newWidth = $(window).width();
+    		$("#dhmap").width(newWidth * 0.8);
+    		$("#dhmap").height(newHeight * 0.8);
+    
+   			var myOptions = {
+      			enableHighAccuracy: true,
+      			zoom: 16,
+      			center: new google.maps.LatLng(18.0149384,-76.7904029),
+    		};
+
+    		map = new google.maps.Map($('#dhmap')[0], myOptions);
+    
+    		var marker = new google.maps.Marker({
+    			position: map.getCenter(),
+    			map: map,
+    			title: 'It is here.',
+  			});
+    	}); 
+	}); 
+
+	$(document).on("pagecreate","#b3", function(){ 
+  		$( "#prpopup" ).on( "popupbeforeposition", function( event, ui ) {
+    		var newHeight = $(window).height();
+    		var newWidth = $(window).width();
+    		$("#prmap").width(newWidth * 0.8);
+    		$("#prmap").height(newHeight * 0.8);
+    
+   			var myOptions = {
+      			enableHighAccuracy: true,
+      			zoom: 14,
+      			center: new google.maps.LatLng(17.933831, -76.842318),
+    		};
+
+    		map = new google.maps.Map($('#prmap')[0], myOptions);
+    
+    		var marker = new google.maps.Marker({
+    			position: map.getCenter(),
+    			map: map,
+    			title: 'It is here.',
+  			});
+    	}); 
+	});
+
+	$(document).on("pagecreate","#n1", function(){ 
+  		$( "#bmpopup" ).on( "popupbeforeposition", function( event, ui ) {
+    		var newHeight = $(window).height();
+    		var newWidth = $(window).width();
+    		$("#bmmap").width(newWidth * 0.8);
+    		$("#bmmap").height(newHeight * 0.8);
+    
+   			var myOptions = {
+      			enableHighAccuracy: true,
+      			zoom: 10,
+      			center: new google.maps.LatLng(18.1753351,-76.7104972),
+    		};
+
+    		map = new google.maps.Map($('#bmmap')[0], myOptions);
+    
+    		var marker = new google.maps.Marker({
+    			position: map.getCenter(),
+    			map: map,
+    			title: 'It is here.',
+  			});
+    	}); 
+	}); 
+
+	$(document).on("pagecreate","#n2", function(){ 
+  		$( "#eppopup" ).on( "popupbeforeposition", function( event, ui ) {
+    		var newHeight = $(window).height();
+    		var newWidth = $(window).width();
+    		$("#epmap").width(newWidth * 0.8);
+    		$("#epmap").height(newHeight * 0.8);
+    
+   			var myOptions = {
+      			enableHighAccuracy: true,
+      			zoom: 14,
+      			center: new google.maps.LatLng(18.0029733,-76.7897142),
+    		};
+
+    		map = new google.maps.Map($('#epmap')[0], myOptions);
+    
+    		var marker = new google.maps.Marker({
+    			position: map.getCenter(),
+    			map: map,
+    			title: 'It is here.',
+  			});
+    	}); 
+	}); 
+
+	$(document).on("pagecreate","#n3", function(){ 
+  		$( "#hzgpopup" ).on( "popupbeforeposition", function( event, ui ) {
+    		var newHeight = $(window).height();
+    		var newWidth = $(window).width();
+    		$("#hzgmap").width(newWidth * 0.8);
+    		$("#hzgmap").height(newHeight * 0.8);
+    
+   			var myOptions = {
+      			enableHighAccuracy: true,
+      			zoom: 15,
+      			center: new google.maps.LatLng(18.0163335,-76.7474046),
+    		};
+
+    		map = new google.maps.Map($('#hzgmap')[0], myOptions);
+    
+    		var marker = new google.maps.Marker({
+    			position: map.getCenter(),
+    			map: map,
+    			title: 'It is here.',
+  			});
+    	}); 
+	}); 
+
+	// checks if geolocation is supported by browser
+ 	function getLocation(){
+		if (navigator.geolocation){
+			// if supported the getCurrentPosition() method is called
+			navigator.geolocation.getCurrentPosition(showLocation);
+		}  	// if not supported the user is notified
+		else{
+			x.innerHTML = "Geolocation is not supported by this browser.";
+		}
+	}
+
+	function showLocation(position){
+		var latitude = position.coords.latitude;
+		var longitude = position.coords.longitude;
+		//x = document.querySelector("#location");
+		//x.innerHTML = "Latitude : " + latitude + " Longitude: " + longitude + "(at least within a " + position.coords.accuracy + " meter radius)";
+
+		var userLatLng = new google.maps.LatLng(latitude, longitude);
+ 		var mapOptions = {
+ 			zoom: 16,
+ 			center: userLatLng,
+ 			mapTypeId: google.maps.MapTypeId.ROADMAP
+ 			//mapTypeId : google.maps.MapTypeId.HYBRID
+		};
+
+ 		var mapObject = new	google.maps.Map(document.getElementById("map"), mapOptions);
+		new google.maps.Marker({
+			map: mapObject,
+			position: userLatLng,
+			title: "You are here."
+		});			
+	}
+
+	//function that reloads the panel each time so it doesn't glitch
+	$(function(){ 
+     	$("body>[data-role = 'panel']").panel().enhanceWithin();
+     	$("#Potanel").trigger("create");
+ 	});
+
+ 	(function() {
+	
+		function Slideshow( element ) {
+			this.el = document.querySelector( element );
+			this.init();
+		}
+	
+		Slideshow.prototype = {
+			init: function() {
+				this.wrapper = this.el.querySelector( ".slider-wrapper" );
+				this.slides = this.el.querySelectorAll( ".slide" );
+				this.previous = this.el.querySelector( ".slider-previous" );
+				this.next = this.el.querySelector( ".slider-next" );
+				this.index = 0;
+				this.total = this.slides.length;
+				this.timer = null;			
+				this.action();
+				this.stopStart();	
+			},
+
+			_slideTo: function( slide ) {
+				var currentSlide = this.slides[slide];
+				currentSlide.style.opacity = 1;
+			
+				for( var i = 0; i < this.slides.length; i++ ) {
+					var slide = this.slides[i];
+					if( slide !== currentSlide ) {
+						slide.style.opacity = 0;
+					}
+				}
+			},
+
+			action: function() {
+				var self = this;
+				self.timer = setInterval(function() {
+					self.index++;
+					if( self.index == self.slides.length ) {
+						self.index = 0;
+					}
+					self._slideTo( self.index );
+				}, 5000);
+			},
+
+			stopStart: function() {
+				var self = this;
+				self.el.addEventListener( "mouseover", function() {self.el.addEventListener( "mouseout", function() {}
+		};
+	
+		document.addEventListener( "DOMContentLoaded", function() {
+})();
+	</script>
+
+	<style type = "text/css">
+ 		#map {
+ 			width: 100%;
+ 			height: 500px;
+		}
+
+		.ui-icon-back:after {
+			background-image: url("themes/images/icons-png/back-black.png");
+			background-size: 12px 12px;
+		}
+
+		.ui-icon-bars:after {
+			background-image: url("themes/images/icons-png/bars-black.png");
+			background-size: 14px 14px;
+		}
+
+		.ui-icon-estate:after {
+			background-image: url("themes/images/icons-png/estate.png");
+			background-size: 17px 17px;
+		}
+
+		.ui-icon-fort:after {
+			background-image: url("themes/images/icons-png/fort.png");
+			background-size: 14px 14px;
+		}
+
+		.ui-icon-garden:after {
+			background-image: url("themes/images/icons-png/garden.jpg");
+			background-size: 14px 14px;
+		}
+
+		.ui-icon-home:after {
+			background-image: url("themes/images/icons-png/home-black.png");
+			background-size: 14px 14px;
+		}
+
+		.ui-icon-info:after {
+			background-image: url("themes/images/icons-png/info-black.png");
+			background-size: 14px 14px;
+		}
+
+		.ui-icon-location:after {
+			background-image: url("themes/images/icons-png/location-black.png");
+			background-size: 14px 14px;
+		}
+
+		.ui-icon-minus:after {
+			background-image: url("themes/images/icons-png/minus-black.png");
+			background-size: 12px 12px;
+		}
+
+		.ui-icon-mountain:after {
+			background-image: url("themes/images/icons-png/mountain.png");
+			background-size: 16px 16px;
+		}
+
+		.ui-icon-museum:after {
+			background-image: url("themes/images/icons-png/museum.png");
+			background-size: 14px 14px;
+		}
+
+		.ui-icon-park:after {
+			background-image: url("themes/images/icons-png/park.png");
+			background-size: 14px 14px;
+		}
+
+		.ui-icon-plus:after {
+			background-image: url("themes/images/icons-png/plus-black.png");
+			background-size: 12px 12px;
+		}
+
+		.ui-icon-zoo:after {
+			background-image: url("themes/images/icons-png/zoo.jpg");
+			background-size: 14px 14px;
+		}
+		
+		html, body {
+			margin: 0;
+			padding: 0;
+		}
+
+		.slider {
+			width: 350px;
+			margin: 2em auto;
+		}
+
+		.slider-wrapper {
+			width: 100%;
+			height: 200px;
+			position: relative;
+		}
+
+		.slide {
+			float: left;
+			position: absolute;
+			width: 100%;
+			height: 100%;
+			opacity: 0;
+			transition: opacity 3s linear;
+		}
+
+		.slider-wrapper > .slide:first-child {
+			opacity: 1;
+		}
+ 	</style>
+</head>
+
+<body>
+	<div data-role = "panel" id = "Potanel" class = "ui-bar ui-bar-a" data-display = "overlay" data-position-fixed = "true" data-theme = "b" style = "background-color: black; opacity: 0.9;">
+		<ul data-role = "listview">
+			<li style = "background-color: black;">
+				<div data-role = "collapsible">
+					<h2>Information</h2>
+					<ul data-role = "listview">
+						<li data-icon = "false">
+							<a href = "#home" class = "ui-btn ui-icon-home ui-corner-all ui-shadow ui-btn-icon-left" data-transition = "slidefade" data-direction = "reverse">Home</a>
+						</li>
+
+						<li data-icon = "false">
+							<a href = "#mapPage" class = "ui-btn ui-icon-location ui-corner-all ui-shadow ui-btn-icon-left" data-transition = "slidefade" data-direction = "reverse">Map</a>
+						</li>
+
+						<li data-icon = "false">
+							<a href = "#about" class = "ui-btn ui-icon-info ui-corner-all ui-shadow ui-btn-icon-left" data-transition = "slidefade" data-direction = "reverse">About Me</a>
+						</li>
+					</ul>
+				</div>
+			</li>
+
+			<li style = "background-color: black;">
+				<div data-role = "collapsible" >
+					<h2>Buildings</h2>
+					<ul data-role = "listview">
+						<li data-icon = "false">
+							<a href = "#b1" class = "ui-btn ui-icon-museum ui-corner-all ui-shadow ui-btn-icon-left" data-transition = "slidefade" data-direction = "reverse">Bob Marley Museum</a>
+						</li>
+
+						<li data-icon = "false">
+							<a href = "#b2" class = "ui-btn ui-icon-estate ui-corner-all ui-shadow ui-btn-icon-left" data-transition = "slidefade" data-direction = "reverse">Devon House</a>
+						</li>
+
+						<li data-icon = "false">
+							<a href = "#b3" class = "ui-btn ui-icon-fort ui-corner-all ui-shadow ui-btn-icon-left" data-transition = "slidefade" data-direction = "reverse">Port Royal</a>
+						</li>
+					</ul>
+				</div>
+			</li>
+
+			<li style = "background-color: black;">
+				<div data-role = "collapsible">
+					<h2>Nature</h2>
+					<ul data-role = "listview">
+						<li data-icon = "false">
+							<a href = "#n1" class = "ui-btn ui-icon-mountain ui-corner-all ui-shadow ui-btn-icon-left" data-transition = "slidefade" data-direction = "reverse">Blue Mountains</a>
+						</li>
+						<li data-icon = "false">
+							<a href = "#n2" class = "ui-btn ui-icon-park ui-corner-all ui-shadow ui-btn-icon-left" data-transition = "slidefade" data-direction = "reverse">Emancipation Park</a>
+						</li>
+						<li data-icon = "false">
+							<a href = "#n3" class = "ui-btn ui-icon-zoo ui-corner-all ui-shadow ui-btn-icon-left" data-transition = "slidefade" data-direction = "reverse">Hope Zoo and Garden</a>
+						</li>
+					</ul>
+				</div>
+			</li>
+		</ul>
+	</div>
+
+	<div data-role = "page" id = "home" data-theme = "b">
+		<div data-role = "header">
+			<a href = "#Potanel" class = "ui-btn ui-btn-inline ui-corner-all ui-shadow ui-icon-bars ui-btn-icon-left ui-btn-icon-notext">Open Panel</a>
+			<h1>Welcome to Jamrock</h1>
+			<a href = "#home" class = "ui-btn ui-btn-inline ui-corner-all ui-shadow ui-icon-home ui-btn-icon-right ui-btn-icon-notext">Home</a>
+		</div>
+
+		<div data-role = "main" class = "ui-content">
+			<div class = "ui-grid-a" style = "background-color: black;">
+				<div class = "ui-block-a" style = "padding: 20px; line-height: 300%; text-align: center;">
+					<h1>Greetings</h1>
+
+					Jamaica is an island out of many one people, with a rich cultural background.<br>
+
+					From West Indians such as the Arawaks/Tainos, to the Spanish led by Christopher Columbus then the English as well as immigrants and slaves; the island of Jamaica has endured cultural interference from a majority of the globe.<br>
+
+					This in itself has led to a wide variety of attractions on the island, six of which are mentioned on this site.<br>
+
+					From the wild life of the zoo to the safety of a house, little small Jamaica offers endless excitement.<br>				
+				</div>
+
+				<div class = "ui-block-b" style = "padding: 20px;">
+						<div class = "slider" id = "home-slider">
+							<div class = "slider-wrapper">
+								<img src="images/bg/Header 3.jpg" alt="1st" class="slide"/>
+								<img src="images/bg/Header 2.jpg" alt="2nd" class="slide"/>
+								<img src="images/bg/Header 1.jpg" alt="3rd" class="slide"/>
+								<img src="images/bg/Header 4.jpg" alt="4th" class="slide"/>
+								<img src="images/bg/Header 5.jpg" alt="5th" class="slide"/>
+							</div>
+						</div>
+
+						<a href = "#homepopup" data-rel="popup" class="ui-btn ui-corner-all ui-shadow ui-icon-location ui-btn-icon-bottom" data-transition="pop" data-position-to="window">Find the island</a>
+				</div>
+			</div>
+
+	  		<div data-role="popup" id="homepopup" data-transition="pop" data-overlay-theme="b" data-theme="b" data-dismissible="true" data-corners="false"  data-shadow="false" data-border="true">
+    			<div id="homemap" style="height:200px"></div>
+			</div> 
+
+			<a href = "#Potanel" class = "ui-btn ui-corner-all ui-shadow ui-icon-bars ui-btn-icon-bottom">Check out the Cultural sites</a>
+		</div>
+
+		<div data-role = "footer">		
+			<h1>Copyright 1994 - 2018 by Le Potato</h1>
+		</div>
+	</div>
+
+	<div data-role = "page" id = "mapPage" data-theme = "b">
+		<div data-role = "header">
+			<a href = "#Potanel" class = "ui-btn ui-btn-inline ui-corner-all ui-shadow ui-icon-bars ui-btn-icon-left ui-btn-icon-notext">Open Panel</a>
+			<h1>Map of Kingston</h1>
+			<a href = "#home" class = "ui-btn ui-btn-inline ui-corner-all ui-shadow ui-icon-home ui-btn-icon-right ui-btn-icon-notext">Home</a>
+		</div>
+
+		<div data-role = "main" class = "ui-content">
+			<div class = "ui-grid-a" style = "background-color: black;">
+				<div class = "ui-block-a" style = "padding: 20px;">
+					<a href = "#kgnpopup" data-rel="popup" class="ui-btn ui-corner-all ui-shadow ui-icon-location ui-btn-icon-bottom" data-transition="pop" data-position-to="window">Explore Kingston</a>
+				</div>
+
+				<div class = "ui-block-b" style = "padding: 20px;">
+					<div data-role = "popup" id = "kgnpopup" data-transition="pop" data-overlay-theme="b" data-theme="b" data-dismissible="true" data-corners="false"  data-shadow="false" data-border = "true">
+    					<div id = "kgnmap" style="height:200px"></div>
+					</div> 
+
+					<a href = "#Potanel" class = "ui-btn ui-corner-all ui-shadow ui-icon-bars ui-btn-icon-bottom">Check out the Cultural sites</a>
+				</div>
+			</div>
+		</div>
+
+		<div data-role = "footer">		
+			<h1>Copyright 1994 - 2018 by Le Potato</h1>
+		</div>
+	</div>
+
+	<div data-role = "page" id = "about" data-theme = "b">
+		<div data-role = "header">
+			<a href = "#Potanel" class = "ui-btn ui-btn-inline ui-corner-all ui-shadow ui-icon-bars ui-btn-icon-left ui-btn-icon-notext">Open Panel</a>
+			<h1>About Me</h1>
+			<a href = "#home" class = "ui-btn ui-btn-inline ui-corner-all ui-shadow ui-icon-home ui-btn-icon-right ui-btn-icon-notext">Home</a>
+		</div>
+
+		<div data-role = "main" class = "ui-content" style = "text-align: center;">
+			Name: David Rhoden<br>
+			ID #: 1406952<br>
+			Major: Computer Science<br>
+			Age: 24<br>
+			Complexion: Jamaican<br>
+
+				<a href = "#Pictato" data-rel = "popup" class = "ui-btn ui-corner-all ui-shadow" data-position-to = "window">
+					Click me for something weird. :)
+				</a>
+				<br><br>
+			
+				<div data-role = "popup" id = "Pictato" data-arrow = "t">
+					<img src = "images/YoWelcome.jpg" style = "width:200px;" alt = "You're Welcome for seeing this amazing st00f">
+				</div>
+		</div>
+
+		<div data-role = "footer">		
+			<h1>Copyright 1994 - 2018 by Le Potato</h1>
+		</div>
+	</div>
+
+	<div data-role = "page" id = "b1" data-theme = "b">
+		<div data-role = "header">
+			<a href = "#Potanel" class = "ui-btn ui-btn-inline ui-corner-all ui-shadow ui-icon-bars ui-btn-icon-left ui-btn-icon-notext">Open Panel</a>
+			<h1>Bob Marley Museum</h1>
+			<a href = "#home" class = "ui-btn ui-btn-inline ui-corner-all ui-shadow ui-icon-home ui-btn-icon-right ui-btn-icon-notext">Home</a>
+		</div>
+
+		<div data-role = "main" class = "ui-content">	
+			<div class = "ui-grid-a" style = "background-color: black;">
+				<div class = "ui-block-a" style = "padding: 20px; line-height: 300%; text-align: center;">	
+					<h1>One Love</h1>
+
+					Museum dedicated to the memory of the late Reggae superstar, Robert "Bob" Marley. The museum is located in Marley's original studio where he recorded many of his songs.<br>		
+
+					The museum is situated on the site of the legendary musician’s home, which he purchased in 1975. This house, featuring 19th-century architecture, was Marley’s home until his transition in 1981. It was converted into a museum six years later by his wife, Mrs Rita Marley. The main museum displays Marley’s personal treasures.<br>
+
+					Relax and enjoy a sumptuous meal from the One Love Café after you’ve completed your tour which offers a peek into every aspect of Bob Marley’s life.<br>
+				</div>
+
+				<div class = "ui-block-b" style = "padding: 20px;">
+					<div class="slider" id="slider1">
+						<div class="slider-wrapper">
+							<img src = "images/bmm/p1.jpg" alt = "boo1" class = "slide">
+							<img src = "images/bmm/p2.jpg" alt = "boo2" class = "slide">
+							<img src = "images/bmm/p3.jpg" alt = "boo3" class = "slide">
+							<img src = "images/bmm/p4.jpg" alt = "boo4" class = "slide">
+							<img src = "images/bmm/p5.jpg" alt = "boo5" class = "slide">
+						</div>
+					</div>
+
+					<a href="#bmmpopup" data-rel="popup" class="ui-btn ui-corner-all ui-shadow ui-icon-location ui-btn-icon-bottom" data-transition="pop" data-position-to="window">Lookie here</a>
+				</div>
+			</div>
+
+			<div data-role="popup" id="bmmpopup" data-transition="pop" data-overlay-theme="b" data-theme="b" data-dismissible="true" data-corners="false"  data-shadow="false" data-border="true">
+    			<div id="bmmmap" style="height:200px"></div>
+			</div> 
+
+			<a href = "#Potanel" class = "ui-btn ui-corner-all ui-shadow ui-icon-bars ui-btn-icon-bottom">Check out more Cultural sites</a>
+		</div>
+
+		<div data-role = "footer">		
+			<h1>Copyright 1994 - 2018 by Le Potato</h1>
+		</div>
+	</div>
+
+	<div data-role = "page" id = "b2" data-theme = "b">
+		<div data-role = "header">
+			<a href = "#Potanel" class = "ui-btn ui-btn-inline ui-corner-all ui-shadow ui-icon-bars ui-btn-icon-left ui-btn-icon-notext">Open Panel</a>
+			<h1>Devon House</h1>
+			<a href = "#home" class = "ui-btn ui-btn-inline ui-corner-all ui-shadow ui-icon-home ui-btn-icon-right ui-btn-icon-notext">Home</a>
+		</div>
+
+		<div data-role = "main" class = "ui-content">
+			<div class = "ui-grid-a" style = "background-color: black;">
+				<div class = "ui-block-a" style = "padding: 20px; line-height: 300%; text-align: center;">	
+					<h1>iScream</h1>
+					
+					Sitting on 11 acres of property, located in the heart of the country’s capital, Kingston, is one of Jamaica’s finest and leading Heritage Sites.
+					<br>
+					This 127-year-old testimonial was built for Jamaica’s first black millionaire, Gorge Stiebel, the World Famous; Devon House!
+					<br>
+					Devon House is one of Jamaica’s most celebrated landmarks, due to its rich history and cultural diversity. It’s a Georgian style house that was built on a property once known as Devon Penn.
+					<br>
+					Oh yeah, it offers one of the best tasting ice-cream in the country.
+				</div>
+
+
+				<div class = "ui-block-b" style = "padding: 20px;">
+					<div class = "slider" id = "slider2">
+						<div class = "slider-wrapper">
+							<img src = "images/dh/p1.jpg" alt = "boo" class = "slide">
+							<img src = "images/dh/p2.jpg" alt = "boo" class = "slide">
+							<img src = "images/dh/p3.jpg" alt = "boo" class = "slide">
+							<img src = "images/dh/p4.jpg" alt = "boo" class = "slide">
+							<img src = "images/dh/p5.jpg" alt = "boo" class = "slide">
+							<img src = "images/dh/p6.jpg" alt = "boo" class = "slide">
+							<img src = "images/dh/p7.jpg" alt = "boo" class = "slide">
+							<img src = "images/dh/p8.jpg" alt = "boo" class = "slide">
+						</div>
+					</div>
+
+					<a href="#dhpopup" data-rel="popup" class="ui-btn ui-corner-all ui-shadow ui-icon-location ui-btn-icon-bottom" data-transition="pop" data-position-to="window">Want some Cream?</a>
+				</div>
+  			</div>
+
+
+  			<div data-role="popup" id="dhpopup" data-transition="pop" data-overlay-theme="b" data-theme="b" data-dismissible="true" data-corners="false"  data-shadow="false" data-border="true">
+    			<div id="dhmap" style="height:200px"></div>
+			</div> 
+
+			<a href = "#Potanel" class = "ui-btn ui-corner-all ui-shadow ui-icon-bars ui-btn-icon-bottom">Check out more Cultural sites</a>
+
+		</div>
+			
+		<div data-role = "footer">		
+			<h1>Copyright 1994 - 2018 by Le Potato</h1>
+		</div>
+	</div>
+
+	<div data-role = "page" id = "b3" data-theme = "b">
+		<div data-role = "header">
+			<a href = "#Potanel" class = "ui-btn ui-btn-inline ui-corner-all ui-shadow ui-icon-bars ui-btn-icon-left ui-btn-icon-notext">Open Panel</a>
+			<h1>Port Royal</h1>
+			<a href = "#home" class = "ui-btn ui-btn-inline ui-corner-all ui-shadow ui-icon-home ui-btn-icon-right ui-btn-icon-notext">Home</a>
+		</div>
+
+		<div data-role = "main" class = "ui-content">
+			<div class = "ui-grid-a" style = "background-color: black;">
+				<div class = "ui-block-a" style = "padding: 20px; line-height: 300%; text-align: center;">	
+					<h1>Wickedest City in the West</h1>
+					Port Royal is a village located at the end of the Palisadoes at the mouth of the Kingston Harbour, in southeastern Jamaica.<br>
+					Founded in 1518 by the Spanish, it was once the largest city in the Caribbean, functioning as the centre of shipping and commerce in the Caribbean Sea by the latter half of the 17th century.<br>
+					It was destroyed by an earthquake on June 7, 1692, which had an accompanying tsunami. Severe hurricanes have regularly damaged it. Another severe earthquake occurred in 1907.<br>
+					The area has surrounding forts, offers scuba diving and tours around the environment.
+				</div>
+			
+				<div class = "ui-block-b" style = "padding: 20px;">
+					<div class = "slider" id = "slider3">
+						<div class = "slider-wrapper">
+							<img src = "images/pr/p1.jpg" alt = "boo" class = "slide">
+							<img src = "images/pr/p2.jpg" alt = "boo" class = "slide">
+							<img src = "images/pr/p3.jpg" alt = "boo" class = "slide">
+							<img src = "images/pr/p4.jpg" alt = "boo" class = "slide">
+							<img src = "images/pr/p5.jpg" alt = "boo" class = "slide">
+							<img src = "images/pr/p6.jpg" alt = "boo" class = "slide">
+							<img src = "images/pr/p7.jpg" alt = "boo" class = "slide">
+						</div>
+					</div>
+
+					<a href="#prpopup" data-rel="popup" class="ui-btn ui-corner-all ui-shadow ui-icon-location ui-btn-icon-bottom" data-transition="pop" data-position-to="window">Excavate me</a>
+				</div>
+			</div>
+
+			<div data-role="popup" id="prpopup" data-transition="pop" data-overlay-theme="b" data-theme="b" data-dismissible="true" data-corners="false"  data-shadow="false" data-border="true">
+    			<div id="prmap" style="height:200px"></div>
+			</div> 
+
+			<a href = "#Potanel" class = "ui-btn ui-corner-all ui-shadow ui-icon-bars ui-btn-icon-bottom">Check out more Cultural sites</a>
+		</div>
+
+		<div data-role = "footer">		
+			<h1>Copyright 1994 - 2018 by Le Potato</h1>
+		</div>
+	</div>
+
+	<div data-role = "page" id = "n1" data-theme = "b">
+		<div data-role = "header">
+			<a href = "#Potanel" class = "ui-btn ui-btn-inline ui-corner-all ui-shadow ui-icon-bars ui-btn-icon-left ui-btn-icon-notext">Open Panel</a>
+			<h1>Blue mountains</h1>
+			<a href = "#home" class = "ui-btn ui-btn-inline ui-corner-all ui-shadow ui-icon-home ui-btn-icon-right ui-btn-icon-notext">Home</a>
+		</div>
+
+		<div data-role = "main" class = "ui-content">
+			<div class = "ui-grid-a" style = "background-color: black;">
+				<div class = "ui-block-a" style = "padding: 20px; line-height: 300%; text-align: center;">	
+					<h1>Coffee and Trips</h1>
+
+					The Blue Mountains are the longest mountain range in Jamaica. From the summit, accessible via a walking track, both the north and south coasts of the island can be seen. On a clear day, the outline of the island of Cuba, 210 km (130 mi) away, can also be seen. The mountain range spans 4 parishes: Portland, St.Thomas, St Mary and St.Andrew.
+					<br>
+					In past years when Jamaica's economy was dominated by plantation slavery, some slaves escaped to the mountains to live independently, where they were known as Maroons.
+					<br>
+					Today, the famous Jamaican Blue Mountain Coffee, which commands premium prices on world markets, is cultivated between 2,000 and 5,000 feet above sea level, while higher slopes are preserved as forest.
+				</div>
+
+				<div class = "ui-block-b" style = "padding: 20px;">
+					<div class="slider" id="slider4">
+						<div class="slider-wrapper">
+							<img src = "images/bm/p1.jpg" alt = "boo" class = "slide">
+							<img src = "images/bm/p2.jpg" alt = "boo" class = "slide">
+							<img src = "images/bm/p3.jpg" alt = "boo" class = "slide">
+							<img src = "images/bm/p4.jpg" alt = "boo" class = "slide">
+						</div>
+					</div>
+
+					<a href="#bmpopup" data-rel="popup" class="ui-btn ui-corner-all ui-shadow ui-icon-location ui-btn-icon-bottom" data-transition="pop" data-position-to="window">Someone said COFFEE?</a>
+				</div>
+			</div>
+			  
+  			<div data-role="popup" id="bmpopup" data-transition="pop" data-overlay-theme="b" data-theme="b" data-dismissible="true" data-corners="false"  data-shadow="false" data-border="true">
+    			<div id="bmmap" style="height:200px"></div>
+			</div> 
+
+			<a href = "#Potanel" class = "ui-btn ui-corner-all ui-shadow ui-icon-bars ui-btn-icon-bottom">Check out more Cultural sites</a>
+		</div>
+
+		<div data-role = "footer">		
+			<h1>Copyright 1994 - 2018 by Le Potato</h1>
+		</div>
+	</div>
+
+	<div data-role = "page" id = "n2" data-theme = "b">
+		<div data-role = "header">
+			<a href = "#Potanel" class = "ui-btn ui-btn-inline ui-corner-all ui-shadow ui-icon-bars ui-btn-icon-left ui-btn-icon-notext">Open Panel</a>
+			<h1>Emancipation Park</h1>
+			<a href = "#home" class = "ui-btn ui-btn-inline ui-corner-all ui-shadow ui-icon-home ui-btn-icon-right ui-btn-icon-notext">Home</a>
+		</div>
+
+		<div data-role = "main" class = "ui-content">
+			<div class = "ui-grid-a" style = "background-color: black;">
+				<div class = "ui-block-a" style = "padding: 20px; line-height: 300%; text-align: center;">	
+					<h1>Emancipate yourself from slavery.</h1>
+
+					Nestled in the heart of urban New Kingston is one of Jamaica’s greatest historical treasures, Emancipation Park. It is themed a “Tribute to Freedom” and lives up to its theme visually with an 11ft bronze sculpture, named Redemption Song.
+					<br>
+					On July 31, 2002 Emancipation Park was officially opened in Kingston, Jamaica. The Park was created to be a symbol of our Freedom to Hope, to Excel and to Be. Emancipation Park is located in central New Kingston the home of corporate Jamaica.  Visitors to the park can find some tranquility in the heart of corporate Jamaica.
+					<br>
+					If you’re a runner, there’s no better place to go for a jog. The park is encircled by a walking/running path. As you go around it, you might begin to sweat from the intensity of the tropical sun but will be immediately cooled by the welcome breeze.
+				</div>
+
+				<div class = "ui-block-b" style = "padding: 20px;">
+					<div class = "slider" id = "slider5">
+						<div class = "slider-wrapper">
+							<img src = "images/ep/p1.jpg" alt = "boo" class = "slide">
+							<img src = "images/ep/p2.jpg" alt = "boo" class = "slide">
+							<img src = "images/ep/p3.jpg" alt = "boo" class = "slide">
+							<img src = "images/ep/p4.jpg" alt = "boo" class = "slide">
+							<img src = "images/ep/p5.jpg" alt = "boo" class = "slide">
+							<img src = "images/ep/p6.jpg" alt = "boo" class = "slide">
+						</div>
+					</div>
+
+					<a href="#eppopup" data-rel="popup" class="ui-btn ui-corner-all ui-shadow ui-icon-location ui-btn-icon-bottom" data-transition="pop" data-position-to="window">Park up by me</a>
+				</div>
+			</div> 
+
+  			<div data-role="popup" id="eppopup" data-transition="pop" data-overlay-theme="b" data-theme="b" data-dismissible="true" data-corners="false"  data-shadow="false" data-border="true">
+    			<div id="epmap" style="height:200px"></div>
+    		</div>
+
+    		<a href = "#Potanel" class = "ui-btn ui-corner-all ui-shadow ui-icon-bars ui-btn-icon-bottom">Check out more Cultural sites</a>
+		</div>
+
+		<div data-role = "footer">		
+			<h1>Copyright 1994 - 2018 by Le Potato</h1>
+		</div>
+	</div>
+
+	<div data-role = "page" id = "n3" data-theme = "b">
+		<div data-role = "header">
+			<a href = "#Potanel" class = "ui-btn ui-btn-inline ui-corner-all ui-shadow ui-icon-bars ui-btn-icon-left ui-btn-icon-notext">Open Panel</a>
+			<h1>Hope Zoo and Garden</h1>
+			<a href = "#home" class = "ui-btn ui-btn-inline ui-corner-all ui-shadow ui-icon-home ui-btn-icon-right ui-btn-icon-notext">Home</a>
+		</div>
+
+		<div data-role = "main" class = "ui-content">
+			<div class = "ui-grid-a" style = "background-color: black;">
+				<div class = "ui-block-a" style = "padding: 20px; line-height: 300%; text-align: center;">	
+					<h1>Roses and Daisies and . . Wildlife.</h1>
+
+					Located in the resort area of Kingston, the Hope Zoo is home to 900 animals across 60 species, including indigenous, endangered, and endemic animals. Among the main attractions is Lucas the Lion, which was a well anticipated addiiton to the animal population of the zoo.
+					<br>
+					In 1881, two hundred (200) acres of Hope Estate was purchased by the Government to establish an experimental garden. Fifty (50) acres of the land was devoted to the development and distribution of new varieties of sugar cane, and ten (10) acres for planting teak, Liberian Coffee, Trinidad Cocoa and pineapples.
+					<br>
+					During the last fifty years Hope Gardens has been through periods of care and neglect. During the period of care the Garden became a place for pleasure, recreation, sightseeing and picnicking. The Garden is especially enjoyed by visitors including students from the near by universities, who seek a quiet place to relax and study.
+					<br>
+					The Hope Botanical Gardens and the Hope Zoo are located on Old Hope Road in the parish of St. Andrew.
+				</div>
+
+				<div class = "ui-block-b" style = "padding: 20px;">
+					<div class = "slider" id = "slider6">
+						<div class = "slider-wrapper">
+							<img src="images/hzg/p1.jpg" alt="1st" class="slide"/>
+							<img src="images/hzg/p2.jpg" alt="2nd" class="slide"/>
+							<img src="images/hzg/p3.jpg" alt="3rd" class="slide"/>
+							<img src="images/hzg/p4.jpg" alt="4th" class="slide"/>
+							<img src="images/hzg/p5.jpg" alt="5th" class="slide"/>
+						</div>
+					</div>
+					<a href="#hzgpopup" data-rel="popup" class="ui-btn ui-corner-all ui-shadow ui-icon-location ui-btn-icon-bottom" data-transition="pop" data-position-to="window">Find some Pokemon</a>
+				</div>
+  			</div>
+
+  			<div data-role="popup" id="hzgpopup" data-transition="pop" data-overlay-theme="b" data-theme="b" data-dismissible="true" data-corners="false"  data-shadow="false" data-border="true">
+    			<div id="hzgmap" style="height:200px"></div>
+			</div> 
+
+			<a href = "#Potanel" class = "ui-btn ui-corner-all ui-shadow ui-icon-bars ui-btn-icon-bottom">Check out more Cultural sites</a>
+		</div>
+
+		<div data-role = "footer">		
+			<h1>Copyright 1994 - 2018 by Le Potato</h1>
+		</div>
+	</div>
+</body>
+</html>
