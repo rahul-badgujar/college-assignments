@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="css/bootstrap.min.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css">
+  <link rel="stylesheet" href="css/style.css" />
+  <title>College Management System</title>
+</head>
+
+<body>
+  <!-- top navigation bar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <div class="container-fluid">
+      <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#sidebar"
+        aria-controls="offcanvasExample">
+        <span class="navbar-toggler-icon" data-bs-target="#sidebar"></span>
+      </button>
+      <a class="navbar-brand me-auto ms-lg-0 ms-3 text-uppercase fw-bold" href="#">PUNE UNIVERSITY</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#topNavBar"
+        aria-controls="topNavBar" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="topNavBar">
+        <form class="d-flex ms-auto my-3 my-lg-0">
+          <div class="input-group">
+            <input class="form-control" type="search" placeholder="Search" aria-label="Search" />
+            <button class="btn btn-primary" type="submit">
+              <i class="bi bi-search"></i>
+            </button>
+          </div>
+        </form>
+        <ul class="navbar-nav">
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle ms-2" href="#" role="button" data-bs-toggle="dropdown"
+              aria-expanded="false">
+              <i class="bi bi-person-fill"></i>
+            </a>
+            <ul class="dropdown-menu dropdown-menu-end">
+              <li><a class="dropdown-item" href="#">Profile</a></li>
+              <li><a class="dropdown-item" href="#">Logout</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <!-- top navigation bar -->
+  <!-- offcanvas -->
+  <div class="offcanvas offcanvas-start sidebar-nav bg-dark" tabindex="-1" id="sidebar">
+    <div class="offcanvas-body p-0">
+      <nav class="navbar-dark">
+        <ul class="navbar-nav">
+          <li>
+            <div class="text-muted small fw-bold text-uppercase px-3">
+              CORE
+            </div>
+          </li>
+          <li>
+            <a href="#" class="nav-link px-3 active">
+              <span class="me-2"><i class="bi bi-speedometer2"></i></span>
+              <span>Dashboard</span>
+            </a>
+          </li>
+          <li class="my-4">
+            <hr class="dropdown-divider bg-light" />
+          </li>
+          <li>
+            <div class="text-muted small fw-bold text-uppercase px-3 mb-3">
+              College Management
+            </div>
+          </li>
+          <li>
+            <a class="nav-link px-3 sidebar-link" data-bs-toggle="collapse" href="#students">
+              <span class="me-2"><i class="bi bi-people-fill"></i></span>
+              <span>Students</span>
+              <span class="ms-auto">
+                <span class="right-icon">
+                  <i class="bi bi-chevron-down"></i>
+                </span>
+              </span>
+            </a>
+            <div class="collapse" id="students">
+              <ul class="navbar-nav ps-3">
+                <li>
+                  <a href="#" class="nav-link px-3">
+                    <span class="me-2"><i class="bi bi-list"></i></span>
+                    <span>Student List</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="#" class="nav-link px-3">
+                    <span class="me-2"><i class="bi bi-person-plus-fill"></i></span>
+                    <span>Add Student</span>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </li>
+          <li>
+            <a class="nav-link px-3 sidebar-link" data-bs-toggle="collapse" href="#professors">
+              <span class="me-2"><i class="bi bi-person-badge"></i></span>
+              <span>Professors</span>
+              <span class="ms-auto">
+                <span class="right-icon">
+                  <i class="bi bi-chevron-down"></i>
+                </span>
+              </span>
+            </a>
+            <div class="collapse" id="professors">
+              <ul class="navbar-nav ps-3">
+                <li>
+                  <a href="#" class="nav-link px-3">
+                    <span class="me-2"><i class="bi bi-list"></i></span>
+                    <span>Professors List</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="#" class="nav-link px-3">
+                    <span class="me-2"><i class="bi bi-person-plus-fill"></i></span>
+                    <span>Add Professors</span>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </li>
+          <li>
+            <a class="nav-link px-3 sidebar-link" data-bs-toggle="collapse" href="#branches">
+              <span class="me-2"><i class="bi bi-book"></i></span>
+              <span>Branches</span>
+              <span class="ms-auto">
+                <span class="right-icon">
+                  <i class="bi bi-chevron-down"></i>
+                </span>
+              </span>
+            </a>
+            <div class="collapse" id="branches">
+              <ul class="navbar-nav ps-3">
+                <li>
+                  <a href="#" class="nav-link px-3">
+                    <span class="me-2"><i class="bi bi-list"></i></span>
+                    <span>Branch List</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="#" class="nav-link px-3">
+                    <span class="me-2"><i class="bi bi-bookmark-plus-fill"></i></span>
+                    <span>Add Branch</span>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </div>
+  <!-- offcanvas -->
+  <main class="mt-5 pt-3">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-md-12">
+          <h4>Dashboard</h4>
+        </div>
+      </div>
+      <div class="container-fluid px-4">
+        <div class="row g-3 my-2">
+          <div class="col-md-4">
+            <div class="p-3 bg-primary text-white shadow-lg d-flex justify-content-around align-items-center rounded">
+              <div>
+                <h3 class="fs-2">10000</h3>
+                <p class="fs-5">Total Students</p>
+              </div>
+              <i class="bi bi-people-fill border rounded p-3" style="font-size: 1.8rem;"></i>
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <div class="p-3 bg-danger text-white shadow-lg d-flex justify-content-around align-items-center rounded">
+              <div>
+                <h3 class="fs-2">5000</h3>
+                <p class="fs-5">Boys</p>
+              </div>
+              <i class="bi bi-gender-male border rounded p-3" style="font-size: 2rem;"></i>
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <div class="p-3 bg-success text-white shadow-lg d-flex justify-content-around align-items-center rounded">
+              <div>
+                <h3 class="fs-2">5000</h3>
+                <p class="fs-5">Girls</p>
+              </div>
+              <i class="bi bi-gender-female border rounded p-3" style="font-size: 1.8rem;"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container-fluid px-4">
+        <div class="row my-4 ">
+          <div class="col-md-12">
+            <h4>Student List</h4>
+          </div>
+        </div>
+        <table class="table table-hover table-sm">
+          <thead>
+            <tr>
+              <th scope="col">#Roll No</th>
+              <th scope="col">Name</th>
+              <th scope="col">Branch</th>
+              <th scope="col">Mobile No</th>
+              <th scope="col">Email</th>
+              <th scope="col">Admission Date</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="left">18</td>
+              <td>Rajesh Bhatt</td>
+              <td class="left">Mechanical</td>
+              <td><a href="tel:9876543210"> 9876543210 </a></td>
+              <td><a href="mailto:shuxer@gmail.com"> rajesh@gmail.com </a></td>
+              <td class="left">22 Feb 2010</td>
+            </tr>
+            <tr>
+              <td class="left">5</td>
+              <td>Pooja Patel</td>
+              <td class="left">Science</td>
+              <td><a href="tel:9876543210"> 9876543210 </a></td>
+              <td><a href="mailto:shuxer@gmail.com"> pooja@gmail.com </a></td>
+              <td class="left">27 Aug 2005</td>
+            </tr>
+            <tr>
+              <td class="left">15</td>
+              <td>Sarah Smith</td>
+              <td class="left">M.C.A.</td>
+              <td><a href="tel:9876543210"> 9876543210 </a></td>
+              <td><a href="mailto:shuxer@gmail.com"> sarah@gmail.com </a></td>
+              <td class="left">05 Jun 2011</td>
+            </tr>
+            <tr>
+              <td class="left">23</td>
+              <td>John Deo</td>
+              <td class="left">M.B.B.S.</td>
+              <td><a href="tel:9876543210"> 9876543210 </a></td>
+              <td><a href="mailto:shuxer@gmail.com"> john@gmail.com </a></td>
+              <td class="left">15 Feb 2012</td>
+            </tr>
+            <tr>
+              <td class="left">10</td>
+              <td>Jay Soni</td>
+              <td class="left">Arts</td>
+              <td><a href="tel:9876543210"> 9876543210 </a></td>
+              <td><a href="mailto:shuxer@gmail.com"> kenh@gmail.com </a></td>
+              <td class="left">12 Nov 2012</td>
+            </tr>
+            <tr>
+              <td class="left">14</td>
+              <td>Jacob Ryan</td>
+              <td class="left">Music</td>
+              <td><a href="tel:9876543210"> 9876543210 </a></td>
+              <td><a href="mailto:shuxer@gmail.com"> johnson@gmail.com </a></td>
+              <td class="left">03 Dec 2001</td>
+            </tr>
+            <tr>
+              <td class="left">7</td>
+              <td>Megha Trivedi</td>
+              <td class="left">Commerce</td>
+              <td><a href="tel:9876543210"> 9876543210 </a></td>
+              <td><a href="mailto:shuxer@gmail.com"> megha@gmail.com </a></td>
+              <td class="left">17 Mar 2013</td>
+            </tr>
+            <tr>
+              <td class="left">18</td>
+              <td>Rajesh</td>
+              <td class="left">Civil</td>
+              <td><a href="tel:9876543210"> 9876543210 </a></td>
+              <td><a href="mailto:shuxer@gmail.com"> rajesh@gmail.com </a></td>
+              <td class="left">22 Feb 2000</td>
+            </tr>
+            <tr>
+              <td class="left">5</td>
+              <td>Pooja Patel</td>
+              <td class="left">Computer</td>
+              <td><a href="tel:9876543210"> 9876543210 </a></td>
+              <td><a href="mailto:shuxer@gmail.com"> pooja@gmail.com </a></td>
+              <td class="left">27 Aug 2005</td>
+            </tr>
+            <tr>
+              <td class="left">18</td>
+              <td>Rajesh Bhatt</td>
+              <td class="left">Mechanical</td>
+              <td><a href="tel:9876543210"> 9876543210 </a></td>
+              <td><a href="mailto:shuxer@gmail.com"> rajesh@gmail.com </a></td>
+              <td class="left">22 Feb 2010</td>
+            </tr>
+          </tbody>
+        </table>
+        <nav aria-label="...">
+          <ul class="pagination float-end">
+            <li class="page-item disabled">
+              <a class="page-link">Previous</a>
+            </li>
+            <li class="page-item"><a class="page-link" href="#">1</a></li>
+            <li class="page-item active" aria-current="page">
+              <a class="page-link" href="#">2</a>
+            </li>
+            <li class="page-item"><a class="page-link" href="#">3</a></li>
+            <li class="page-item">
+              <a class="page-link" href="#">Next</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+  </main>
+  <script src="./js/bootstrap.bundle.min.js"></script>
+  <script src="./js/jquery-3.5.1.js"></script>
+</body>
+
+</html>
